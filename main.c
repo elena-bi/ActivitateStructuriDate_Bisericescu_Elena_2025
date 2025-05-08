@@ -34,8 +34,5 @@ int main() {
 
     //How to define a constant:
     const int roomLength = 10; //value is not changing after its declaration
-
-
-
     return 0;
 }

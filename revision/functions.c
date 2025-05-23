@@ -1,18 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 
-const char* happyBirthday(){
+const char* happyBirthday(char name[]){
+    if (strlen(name) > 1) {
+        return "Happy birthday %s";
+    }
     return "Happy birthday silly";
 };
 
 int main() {
-    char isItMyBirthday = 'a';
+    char isItMyBirthday[20];
     const char* message = "";
+    char name[25];
+    printf("\nWhat's your name?\n");
+    scanf("%s", &name);
     printf("\nIs it your birthday?\n");
-    scanf("%c", &isItMyBirthday);
-    
+    char isItMyBirthday[1] = scanf("%c", &isItMyBirthday);
+
     if(isItMyBirthday == 'Y') {
-        message = happyBirthday();
-        printf("%s", message);
+        printf("%s", happyBirthday(name));
     }
     return 0;
 }

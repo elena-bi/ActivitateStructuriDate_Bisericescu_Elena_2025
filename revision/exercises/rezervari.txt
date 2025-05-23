@@ -1,0 +1,3 @@
+1 Hotel_Transilvania 2 Ana 500.5  
+3 Hilton 1 Mihai 300.0 
+2 Ibis 3 Maria 750.0  
